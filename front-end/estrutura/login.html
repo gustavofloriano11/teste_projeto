@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css"/>
+    <title>Entrar no EPTRAN</title>
+</head>
+<body>
+    <div class="barra_navegacao">
+        <div class="elementos_esquerda">
+            <img class="imagem_tres_barras" src="../imagens/menu.png">
+            <p>Login</p>
+        </div>
+        <div class="icones_direita">
+            <img class="usuario_branco" src="../imagens/usuario.png">
+            <img class="engrenagem" src="../imagens/engrenagem.png">
+        </div>
+    </div>
+    <div class="centralizar_div">
+        <div class="div_centralizada_login">
+            <div class="barrazul_entrar">
+                <p class="fonte_entrar">Login</p>
+            </div>
+            <div class="espacamento_login">
+                <input id="campo_usuario" placeholder="Usuário">
+            </div>
+            <div class="espacamento_login">
+                <input type="text" placeholder="Senha" id="campo_senha">
+                <div class="espacamento_links">
+                    <a class="textos_azuis" onclick="recuperarSenha()">Esqueceu a senha?</a> <!-- Essa tag vai pra quando o usuário esquecer a senha -->
+                </div>
+            </div>
+            <div>
+                <button class="botao_entrar" onclick="logar()">Logar</button>
+            </div>
+            <div class="espacamento_links">
+                <a class="textos_azuis" href="cadastro.html">Não tem conta?</a> <!-- Quando o usuário n tem conta, clica aqui e vai pro cadastro. -->
+            </div>
+        </div>
+    </div>
+    <footer class="rodape">
+        <img class="cidade_rodape" src="../imagens/cidade_rodape_Iphone14.png">
+        <div class="display_footer">
+            <img class="logo_prefeitura" src="../imagens/Prefeitura.png">
+            <img class="logo_projeto" src="../imagens/logo_eptran.png">
+        </div>
+        <div id="aba_menu" class="menu">
+            <div class="menu_suspenso">
+                <p class="texto_menu_select"> EPTRAN </p>
+                <p class="texto_menu"> SÉRIES INICIAIS</p>
+                <p class="texto_menu"> SÉRIES FINAIS</p>
+                <p class="texto_menu"> ENSINO MÉDIO</p>
+            </div>
+            <div class="flexivel">
+                <img class="logo_prefeitura_menu" src="../imagens/Prefeitura.png">
+                <img class="logo_projeto_menu" src="../imagens/logo_eptran.png">
+            </div>
+            <hr class="barra_menu">
+            <div>
+                <div class="flexivel">
+                    <img class="engrenagem_menu" src="../imagens/engrenagem.png">
+                    <p class="texto_menu"> CONFIGURAÇÕES</p>
+                </div>
+                <div class="flexivel">
+                    <img class="engrenagem_menu" src="../imagens/usuario.png">
+                    <p class="texto_menu"> CONTA</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../scripts/animacaoMenu.js"></script>
+<script src="../scripts/validacaoLogin.js"></script>
+</html>

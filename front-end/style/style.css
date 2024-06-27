@@ -1,0 +1,818 @@
+@font-face {
+    font-family: roboto-black;
+    src: url(../style/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../style/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: kanit;
+    src: url(Kanit-Regular.ttf);
+}
+
+@font-face {
+    font-family: Kanit-bold;
+    src: url(../style/Kanit-Bold.ttf);
+}
+
+@font-face {
+    font-family: Kanit;
+    src: url(../style/Kanit-Regular.ttf);
+}
+
+
+body{
+    margin: 0;
+}
+
+.barra_navegacao{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #05466c;
+    color: white;
+    display: flex;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.imagem_tres_barras{
+    z-index: +1;
+    filter: invert(100%) ;
+    padding-left: 20px;
+    padding-right: 15px;
+    width: 28px;
+    height: 28px;
+}
+.imagem_maior_que{
+    filter: invert(100%);
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 10px;
+    height: 15px;
+}
+.usuario_branco{
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+}
+.usuario_branco_inicio{
+    padding-left: 155px;
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+}
+.usuario_branco_login{
+    padding-left: 150px;
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+}
+#usuario_branco_ensino_medio{
+    padding-left: 30px;
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+}
+.engrenagem{
+    filter: invert(100%);
+    padding-left: 20px;
+    width: 20px;
+    height: 20px;
+}
+.centralizar_div{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 700px;
+    display: flex; 
+    justify-content: center; /*alinha a div filha no centro horizontal */
+    align-items: center; /* alinha a div filha no centro vertical */
+}
+.centralizar_animacao{
+    width: 350px;
+    height: 300px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+}
+.div_mae{
+    display: flex; 
+    justify-content: center; /*alinha a div filha no centro horizontal */
+    align-items: center; /* alinha a div filha no centrovertical */
+    height: 800px;
+    width: 100%;
+}
+.jogo{
+    height: 200px;
+    width: 337px;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+.animacao{
+    font-size: 20px;
+    font-family: kanit;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.tamanho_ideal_expandir{
+    height: 40px;
+    width: 40px;
+    padding-left: 190px;
+    padding-top: 18px;
+}
+.tamanho_ideal_volume{
+    height: 30px;
+    width: 30px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.div_centralizada_cadastro{
+    text-align: center;
+    width: 300px;
+    height: 480px;
+    background-color: #EFEFEF;
+}
+.div_centralizada_login{
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    height: 380px;
+    background-color: #EFEFEF;
+}
+.barrazul_entrar{ /*fundo do titulo cadastro e login*/
+    border-radius: 10px 10px 0 0;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+    background-color: #05466c;
+    color: white;
+    display: inline-block; 
+}
+.fonte_entrar{
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.fundo_cinza{
+    height: 135px;
+    width: 100%;
+    background-image: url("../imagens/capa.jpg");
+    background-repeat: no-repeat;
+}
+#capa_inicio{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    background-image: url(../imagens/capa.jpg);
+    background-repeat:round;
+    justify-content: center;    
+    align-items: center;
+}
+#titulo_cabecalho{
+    text-align: center;
+    font-family: Kanit-bold;
+    font-size: 150%;
+}
+#texto_introducao{
+    font-family: kanit;
+    text-align: center;
+    margin: 0% 5% 0% 5%;
+}
+#introducao_texto_2{
+    margin-top: 8%;
+    margin-bottom: 8%;
+    font-family: kanit;
+}
+.fundo_vermelho{
+    height: 110px;
+    background-color: #e53b2a;
+    display: flex;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+.icones{
+    width: 20px;
+    height: 20px;
+}
+.espacamento_login{
+    margin-top: 15%;
+}
+.espacamento_cadastro{
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+.espacamento_links{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.textos_azuis{
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(32, 108, 223);
+}
+.logo_prefeitura{
+    padding-left: 50px;
+    width: 150px;
+    height: 80px;
+}
+.logo_projeto{
+    filter: invert(19%) sepia(18%) saturate(5009%) hue-rotate(176deg) brightness(40%) contrast(96%);
+    padding-left: 25px;
+    width: 150px;
+    height: 90px;
+}
+#campo_usuario{
+    background-image: url(../imagens/usuario.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size:20px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: #8f8f8f 0px 10px 10px -5px;
+    padding-left: 22px;
+}
+#campo_senha{
+    background-image: url(../imagens/cadeado.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size:20px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: #8f8f8f 0px 10px 10px -5px;
+    padding-left: 22px;   
+}
+#campo_cidade{
+    background-image: url(../imagens/localizador_de_mapa.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size:20px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: #8f8f8f 0px 10px 10px -5px;
+    padding-left: 22px;   
+}
+#campo_email{
+    background-image: url(../imagens/e-mail.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size:20px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: #8f8f8f 0px 10px 10px -5px;
+    padding-left: 22px;   
+}
+#campo_escolaridade{
+    width: 193px;
+    background-image: url(../imagens/graduacao.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size:20px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: #8f8f8f 0px 10px 10px -5px;
+    padding-left: 22px;   
+}
+.fundo_amarelo{
+    display: flex;
+    margin-bottom: 10%;
+    height: 120px;
+    background-color: #fabe27;
+    margin-top: 10%;
+}
+.fundo_verde{
+    display: flex;
+    height: 120px;
+    background-color: #027551;
+}
+.menu.aparece{
+    display: block;
+    transform: translateX(0);
+}
+#aba_menu{
+    transform: translateX(-101%);
+    transition-duration: 1s;
+    width: 75%;
+    height: 104%;
+    position: absolute;
+    top:0.1%;
+    background-color:#05466c;
+    margin-bottom: 10px;
+}
+.texto_menu_select{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.texto_menu{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(199, 194, 194);
+}
+.menu_suspenso{
+    margin-bottom: 160%;
+    margin-top: 20%;
+    margin-left: 20%;
+}
+.flexivel{
+    display: flex;
+    align-items: center;
+}
+.engrenagem_menu{
+    padding-right: 5%;
+    filter: invert(80%);
+    padding-left: 20px;
+    width: 20px;
+    height: 20px;
+}
+#barrazul_menu{
+    align-items: center;
+    width: 100%;
+    background-color: #05466c;;
+    color: white;
+    display: flex;
+}
+.imagem_tres_barras_menu{
+    filter: invert(100%) ;
+    padding-left: 20px;
+    padding-right: 15px;
+    width: 28px;
+    height: 28px;
+    padding-top: 3%;
+}
+#transparente{
+    filter: opacity(52%);
+}
+.rodape{
+    background-color: #f2f2f2;
+}
+.cidade_rodape{
+    width: 100%;
+}
+.display_footer{
+    height: 120px;
+    display: flex;
+}
+.botao_entrar { /* Botão animado, para login e cadastro, é um código open source  retirado do site: uiverse*/
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .botao_entrar:hover {
+    background-color:#05466C;
+    box-shadow: 0px 15px 20px rgba(11, 118, 180, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .botao_entrar:active {
+    transform: translateY(-1px);
+  }
+
+  #fundo_azul_capa{
+    background-color: #05466C;
+    font-family: Kanit;
+  }
+
+  .centro_eptran_capa{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 15%;
+    margin-left: 1%;
+  }
+
+  .texto_capa_aprender_trânsito{
+    color: white;
+    text-align: right;
+    padding-right: 5px;
+    font-size: 20px;
+  }
+  #cor_verde_capa_idade{
+    color: #45b05d;
+    font-size: 20px;
+  }
+  .texto_dois_capa{
+    color: white;
+    font-size: 20px;
+  }
+  .texto_lado_a_lado{
+    justify-content: right; /*Justify-content pega todo o conteúdo dentro de uma display flex e consegue deslocar para qualquer direção*/
+    padding-right: 35px ;
+    display: flex;
+    color: white;
+    height: 25px;
+  }
+
+  .cor_amarela_capa_aprender{
+    color: #EEC744;
+    font-size: 20px;
+  }
+  .texto_lado_a_lado_dois{
+    justify-content: right; 
+    padding-right: 25px ;
+    display: flex;
+    color: white;
+    height: 25px;
+  }
+  .cor_vermelho_capa_texto{
+    color: #F97171;
+    text-align: right;
+    font-size: 20px;
+  }
+  .texto_lado_a_lado_tres{
+    display: flex;
+    justify-content: right;
+    padding-right: 20px;
+  }
+  .ponto_final_capa{
+    color: white;
+    font-size: 20px;
+  }
+  #circulo_capa_da_foca{
+    width: 320px;
+    height: 350px;
+    background-color: white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 40px 40px 50px;
+    margin-bottom: 7%;
+  }
+  #centralizar_div_capa{
+    width: 100%;
+    padding-top: 30px;
+    display: flex; 
+    justify-content: center; /*alinha a div filha no centro horizontal */
+    align-items: center; /* alinha a div filha no centro vertical */
+}
+
+.botao_entrar_capa{
+    width: 167.36px;
+    background-color:#000000; 
+    color:#fff; 
+    box-shadow:0 6px 0 #ffffff;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 20px;
+}
+.botao_entrar_capa:hover{ 
+    background:#000000; 
+    box-shadow:0 6px 0 #ffffff;
+}
+.botao_entrar_capa:active{ 
+    background:#000000; box-shadow: 0 0px 0 #000000; transform: translateY(6px); 
+}
+
+.botao_cadastrar_capa{ 
+    background-color:#979797; 
+    color:#fff; 
+    box-shadow:0 6px 0 #ffffff;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.botao_cadastrar_capa:hover{ 
+    background:#979797; 
+    box-shadow:0 6px 0 #ffffff;
+}
+.botao_cadastrar_capa:active{ 
+    background:#979797; 
+    box-shadow: 0 0px 0 #979797; 
+    transform: translateY(6px); 
+}
+#centralizar_botao_capa{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+}
+.placas{
+    height: 120%;
+    padding-left: 15%;
+    position: relative;
+    bottom: 10px;
+}
+.textos_preto{
+    text-decoration: none;
+    color: black;
+    font-family: kanit;
+}
+.textos_branco{
+    text-decoration: none;
+    color: white;
+    font-family: kanit;
+}
+.series_branco{
+    text-align: center;
+    padding-left: 65px;
+    color: white;
+    font-family: kanit;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+}
+#placa_ciclista{
+    height: 140px;
+    width: auto;
+    position: relative;
+    bottom: 10px;
+    padding-left: 10px;
+}
+.series_branco_vermelho{
+    text-align: center;
+    padding-left: 85px;
+    color: white;
+    font-family: kanit;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+
+}
+.series_branco_amarelo{
+    text-align: center;
+    padding-left: 20px;
+    color: black;
+    font-family: kanit;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    font-weight: bold;
+}
+.placa_voce_esta_no_eptran{
+    height: 140px;
+    padding-left: 10%;
+    position: relative;
+    bottom: 10px;
+}
+#usuario_branco_7erros_ajustar{
+    padding-left: 105px;
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+}
+
+.jogo_cinza{
+    font-size: 30px;
+    font-family: roboto;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 480px;
+    text-align: center; /* alinha horizontalmente */
+}
+.subtitulo_jogos{
+    font-size: 18px;
+    font-family: roboto;
+}
+#usuario_branco_series{
+    padding-left: 5%;
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+}
+
+#menina_pensativa{
+    padding-top: 10px;
+    width: 175px;
+    height: 190px;
+    padding-right: 500px;
+}
+#ideia{
+    width: 80px;
+    height: 100px;
+    padding-right: 300px;
+}
+.botao_ensino_medio{
+    display: flex;
+    justify-content: center;
+    padding-top: 13%;
+}
+#imagens_jogo_ensino_medio{
+    display: flex;
+}
+#homem_escolhendo{
+    padding-top: 12%;
+    width: 170px;
+    height: 200px;
+
+}
+#icone_certo{
+    padding-top: 50px;
+    width: 120px;
+    height: 110px;
+}
+#icone_errado{
+    padding-top: 50px;
+    width: 120px;
+    height: 100px;
+}
+
+#fundo_cinza_jogo_SF{
+    width: 2000px;
+    background-color: #f2f2f2;
+    height: auto;
+    border-radius: 10px;
+}
+
+#titulo_e_subtitulo{
+    text-align: center;
+    margin-top: 15%;
+}
+
+#titulo_SF{
+    font-family: roboto-black;
+    word-break: normal;
+    font-size: 27px;
+}
+
+#subtitulo_SF{
+    margin: 1%;
+    font-family: roboto;
+}
+
+.botao_SF{
+    display: flex;
+    justify-content: center;
+    padding-top: 35%;
+}
+
+.links_barra{
+    color: white;
+    text-decoration: none;
+}
+.icones_direita{
+    padding-right: 3%;
+}
+.elementos_esquerda{
+    align-items: center;
+    display: flex;
+}
+
+.inicio_botao{
+    color: white;
+    text-decoration: none;
+}
+
+.fundo_azul_jogos{
+    background-color: #05466B;
+    width: 90%;
+    height: 25%;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    margin-top: 7%;
+    border-radius: 18px;
+}
+
+#sete_erros_capa{
+    height: auto;
+    width: 50%;
+    border-radius: 15px;
+    margin-left: 3%;
+}
+
+.titulo_jogos_SF{
+    color: white;
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 7%;
+}
+
+.canto_direito_SF{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.jogo_azul{
+    color: white;
+    font-size: 20px;
+    font-family: roboto;
+    background-color:  #05466C;
+    border-radius: 30px;
+    width: 94%;
+    height: 30%;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+.imagem_quiz{
+    width: 200px;
+    height: auto ;
+    border-radius: 20px;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+.deixar_lado{
+    display: flex;
+    padding-left: 3%;
+}
+
+.imagem_jogo{
+    width: 200px;
+    height: auto ;
+    border-radius: 20px;
+    margin-top: 5%;
+}
+
+.imagens_eptran{
+    width: 200px;
+    height: auto ;
+    border-radius: 20px;
+    margin-top: 5%;
+}
+
+#quiz_capa{
+    height: auto;
+    width: 50%;
+    border-radius: 15px;
+    margin-right: 3%;
+}
+
+.fundo_cinza_infos_SF{
+    background-color: #f2f2f2;
+    height: auto;
+    width: 100%;
+    padding-bottom: 5%;
+    border-radius: 5px;
+}
+
+#infos{
+    padding-top: 10%;
+    font-family: roboto-black;
+    font-size: 27px;
+    margin-left: 5%;
+}
+
+.botoes{
+    height: 10%;
+    width: 10%;
+}
+
+.fotos_sf{
+    height: auto;
+    width: 70%;
+    border-radius: 15px;
+}
+
+.alinhamento_div{
+    margin-top: 8%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bolas{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.jogos_SF{
+    margin-bottom: 15%;
+}
+.logo_prefeitura_menu{
+    filter: invert(100%) sepia(5%) saturate(0%) hue-rotate(297deg) brightness(104%) contrast(104%);
+    width: 130px;
+    height: 70px;
+    padding-left: 5%;
+}
+.logo_projeto_menu{
+    padding-top: 5%;
+    padding-left: 10px;
+    width: 150px;
+    height: 90px;
+}
